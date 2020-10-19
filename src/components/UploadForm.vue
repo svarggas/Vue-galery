@@ -4,7 +4,11 @@
         @change="uploadImages($event.target.files)"
         multiple 
         accept="image/*"/>
-        <h3>Drag some files here to upload!</h3> 
+        <div class="textUploader">
+            <i class="images huge icon uploader"></i>
+            <br/>
+            <h1 class="uploader">Drag and drop or browse files!</h1> 
+        </div>
     </div>
 </template>
 
@@ -20,7 +24,7 @@ export default {
 <style scoped>
     .dropper{
         height: 30vh;
-        border: 2px black dashed;
+        border: 2px #86c5d8 dashed;
         border-radius: 5px;
         justify-content: center;
         align-items: center;
@@ -35,5 +39,11 @@ export default {
         height: 30vh;
         position: absolute;
         opacity: 0;
+    }
+    .uploader{
+        color: lightblue;
+    }
+    .textUploader{
+        text-align: center;
     }
 </style>

@@ -1,7 +1,10 @@
 <template>
-    <div class="ui menu">
+    <div class="ui stackable menu">
+        <div class="item">
+            <i class="images big icon"></i>
+        </div>
         <a href="/" class="header item">
-            Image Storage
+            My stock
         </a>
 
         <div class="right menu">
@@ -34,5 +37,11 @@
     .horizontal{
         display: flex;
         flex-direction: row;
+    }
+    .menu{
+        font-size: 16px;
+    }
+    i{
+        color: lightblue;
     }
 </style>
