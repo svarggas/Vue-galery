@@ -12,7 +12,7 @@ const getters = {
 
 const actions = {
     logout: ({ commit }) => {
-        commit('setToken', null);//This call the mutation below
+        commit('setToken', null);
         window.localStorage.removeItem('imgur_token')
     },
     login: () => {
