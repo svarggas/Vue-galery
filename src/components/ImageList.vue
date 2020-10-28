@@ -5,18 +5,23 @@
                 :src="image.link" 
                 :key="image.id"/>
         </div>
-        <h2 v-else>Please log in to see your pictures</h2>
+        <div v-else>  
+            <NotLoggedIn/>
+        </div>
     </div>
-    
 </template>
 
 <script>
 import { mapActions, mapGetters } from 'vuex'
+import NotLoggedIn from './NotLoggedIn'
 
 export default {
     name: 'ImageList',
     methods: mapActions(['fetchImages']),
     computed: mapGetters(['allImages', 'isLoggedIn']),
+    components: {
+        NotLoggedIn
+    },
     created(){
         this.fetchImages();
     }
