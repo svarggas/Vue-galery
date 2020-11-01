@@ -11,17 +11,21 @@
         </div>
     </div>
     <div v-else>
-        Not today son
+        <ErrorPage/>
     </div>  
 </template>
 
 <script>
 import { mapActions, mapGetters } from 'vuex';
+import ErrorPage from './ErrorPage'
 
 export default {
     name: 'UploadForm',
     methods: mapActions (['uploadImages']),
-    computed: mapGetters(['isLoggedIn'])
+    computed: mapGetters(['isLoggedIn']),
+    components: {
+        ErrorPage
+    },
 }
 </script>
 

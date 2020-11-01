@@ -7,15 +7,17 @@
             Please log in to see your photos
         </h2>
         <button type="button" class="ui secondary button">
-            <i class="icon caret left"></i>Return Home
-            <!--- Return to landing page with router --->
+            <router-link to="/" class="white">
+                <i class="icon caret left"></i>
+                Return Home
+            </router-link>
         </button>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'NotLoggedIn'
+    name: 'ErrorPage'
 }
 </script>
 
@@ -27,5 +29,8 @@ export default {
     .notLoggedIn img{
         width: 80vh;
         height: auto;
+    }
+    .white{
+        color: white;
     }
 </style>

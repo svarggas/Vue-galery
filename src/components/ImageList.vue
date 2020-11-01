@@ -6,21 +6,21 @@
                 :key="image.id"/>
         </div>
         <div v-else>  
-            <NotLoggedIn/>
+            <ErrorPage/>
         </div>
     </div>
 </template>
 
 <script>
 import { mapActions, mapGetters } from 'vuex'
-import NotLoggedIn from './NotLoggedIn'
+import ErrorPage from './ErrorPage'
 
 export default {
     name: 'ImageList',
     methods: mapActions(['fetchImages']),
     computed: mapGetters(['allImages', 'isLoggedIn']),
     components: {
-        NotLoggedIn
+        ErrorPage
     },
     created(){
         this.fetchImages();
