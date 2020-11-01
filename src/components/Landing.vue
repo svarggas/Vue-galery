@@ -3,7 +3,7 @@
 
         <div v-if="!isLoggedIn" class="notLoggedInDiv">
             <img src="../../public/imgs/LogInPlease.png" class="notLoggedInImg">
-            <h1>Please log in  or register in IMGUR to enter</h1>
+            <h1>Please log in or register in IMGUR to enter</h1>
         </div>
 
     </div>

@@ -5,7 +5,7 @@
             <div class="item">
                 &nbsp;
             </div>
-            <a href="/" class="header item">
+            <a class="header item">
                 IMGR Private Galery
             </a>
 
