@@ -33,4 +33,7 @@ export default {
     .white{
         color: white;
     }
+    .button{
+        background: lightblue !important;
+    }
 </style>

@@ -75,7 +75,7 @@ export default {
 <style scoped>
     .dropper{
         height: 30vh;
-        border: 2px #86c5d8 dashed;
+        border: 2px dashed;
         border-radius: 5px;
         justify-content: center;
         align-items: center;
