@@ -1,12 +1,11 @@
 /*
-Client ID: b36f668606d5496
-Client secret: 837ef8b5203aef86e5061a8289a524401a733da4
-https://api.imgur.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&response_type=REQUESTED_RESPONSE_TYPE&state=APPLICATION_STATE
+Client ID: c4e07e7724656b6
+Client secret: fb8bbb9fd8fe357993c86fbdff5af6cd961ddbd0
 */
 import qs from 'qs';
 import axios from 'axios';
 
-const CLIENT_ID =  'b36f668606d5496'
+const CLIENT_ID =  'c4e07e7724656b6'
 var ROOT_URL = 'https://api.imgur.com'
 
 export default {
